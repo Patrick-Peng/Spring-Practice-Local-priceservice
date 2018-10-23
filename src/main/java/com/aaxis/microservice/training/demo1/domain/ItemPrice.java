@@ -1,10 +1,12 @@
 package com.aaxis.microservice.training.demo1.domain;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class ItemPrice {
+public class ItemPrice implements Serializable{
     @Id
     private String id;
     private double price;
